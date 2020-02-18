@@ -15,13 +15,6 @@ global $event_star_customizer_all_values;
 		<?php
 		$sidebar_layout = event_star_sidebar_selection();
 		$thumbnail = $event_star_customizer_all_values['event-star-single-img-size'];
-		if( has_post_thumbnail() && 'disable' != $thumbnail):
-			echo '<div class="image-wrap"><figure class="post-thumb">';
-			the_post_thumbnail( $thumbnail );
-			echo "</figure></div>";
-		else:
-			$no_blog_image = 'no-image';
-		endif;
 		?>
 		<div class="entry-content <?php echo $no_blog_image?>">
 			<?php
