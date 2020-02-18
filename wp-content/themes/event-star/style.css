@@ -2168,9 +2168,7 @@ article.page .post-thumb a{
 	-webkit-transition:all 0.5s ease-in-out 0s;
 	-moz-transition:all 0.5s ease-in-out 0s;
 }
-.post-thumb img:hover{
-	opacity: 0.6;
-}
+
 /*article post test end*/
 .nav-links div {
 	display: inline-block;

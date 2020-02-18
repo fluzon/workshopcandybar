@@ -53,11 +53,6 @@ function event_star_entry_footer() {
 
 		echo '<i class="fa fa-calendar-check-o" aria-hidden="true"></i> <span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
 
-		printf(
-            '%s',
-            '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '"><i class="fa fa-user"></i>' . esc_html( get_the_author() ) . '</a></span>'
-        );
-
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'event-star' ) );
 		if ( $tags_list ) {
